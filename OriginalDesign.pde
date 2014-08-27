@@ -1,22 +1,24 @@
 void setup()
 {
-  size(1000,1000);
-  background(255,0,238);
+  size(500,500);
+  frameRate(2);
+  
 }
 void draw()
 {
+  background(0,0,0); //background color
   drawCircle();
   drawRandomShit();
 }
-void drawCircle()
+void drawCircle() //draws random circles
 {
   noStroke();
-  fill(random(0,255),random(0,255),random(0,255));
-  ellipse(random(0,1000),random(0,1000),169,159);
+  fill(random(0,255),random(0,255),random(0,255),95);
+  ellipse(random(0,500),random(0,500),169,159);
 }
-void drawRandomShit()
+void drawRandomShit() //draw random quadralaterals 
 {
   noStroke();
-  fill(255,115,0,50);
-  quad(random(0,1000),random(0,1000)/*1*/,random(0,1000),random(0,1000)/*2*/,random(0,1000),random(0,1000)/*3*/,random(0,1000),random(0,1000)/*4*/);
+  fill(255,247,0,95);
+  quad(random(0,500),random(0,500)/*1*/,random(0,500),random(0,500)/*2*/,random(0,500),random(0,500)/*3*/,random(0,500),random(0,500)/*4*/);
 }
